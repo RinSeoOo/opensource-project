@@ -31,5 +31,5 @@
 ### 참고 문헌
   
 ### 소스 코드 GitHub 링크
-
+https://rinseooo.github.io/opensource-project/mainpage.html
 ### 프로젝트 소개 동영상(3-5분) 링크
