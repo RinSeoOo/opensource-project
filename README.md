@@ -1,4 +1,5 @@
 # opensource-project
+#### 아직 미완성
 
 ## ILIKETHESE
 ##### 자기가 좋아하고 싫어하는 것 기록하기
