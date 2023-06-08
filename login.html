@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LOGIN</title>
+    <link href="base.css" type="text/css" rel="stylesheet">
+    <link href="login.css" type="text/css" rel="stylesheet">
+
+
+    <style>
+
+        body{
+            background-color: rgb(43, 52, 67);
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <!--1. 타이틀-->
+    <div class= "LOH_title">
+        <h1 class="title-font" style="font-size: 38px;text-shadow: 1px 1px black;"><a href="mainpage.html" title="LOVEorHATE">I LIKE THESE</h1></a>
+    </div>
+
+    <!--create account 화면-->
+    <!--유효성 검사 끄기: novalidate-->
+    <div class="account">
+        <div class="account-name">
+            <h2>Login</h2>
+        </div>
+        <form name="login-sccess" action="loginpage.html" method="POST" autocomplete="off">
+            <div class="login-page">
+                <div class="login_email">
+                <label for="login_email"><h3>Email</h3></label>
+                <!-- <active class="form-button"></active> -->
+                <input type="email" id="login_email" class="input-box" required>
+                </div>
+                <div class="login_pwd">
+                    <label for="login_pwd"><h3>Password</h3></label>
+                    <input type="password" id="login_pwd" class="input-box" required>
+                </div>
+                
+                <div class="sign-button">
+                    <input type="submit" id="login" class="field" value="Login">
+                    <button id="save-field" class="field"><a href="mainpage.html" style="color: white;">Cencel</a></button>
+                </div>
+                <div class="forgot-pwd" id="forgot-pwd">Forgot Password?</div>
+                <div class="forgot-pwd" id="create-account"><a href="createaccount.html" style="color:rgb(128, 144, 177);">Create Account</a></div>
+            </div>
+        </form>
+
+        
+
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyDi-IzmY5urqpBZfwIT6UK70fRTGuNgEpQ",
+              authDomain: "opensource-project-9c30d.firebaseapp.com",
+              projectId: "opensource-project-9c30d",
+              storageBucket: "opensource-project-9c30d.appspot.com",
+              messagingSenderId: "291550553917",
+              appId: "1:291550553917:web:172ad3c0b46730c61f0754",
+              measurementId: "G-30MVW94EMB"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+
+            import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js";
+
+            const auth = getAuth();
+
+            document.getElementById('login').addEventListener('click', (event) => {
+                event.preventDefault()
+                const login_email = documentgetElementById('login_email').value;
+                const login_pwd = documentgetElementById('login_pwd').value;
+                signInWithEmailAndPassword(auth, login_email, login_pwd)
+                    .then((userCredential) => {
+                        // Signed in
+                        console.log(userCredential)
+                        const user = userCredential.user;
+                        // ...
+                    })
+                    .catch((error) => {
+                        console.log('Login error')
+                        const errorCode = error.code;
+                        const errorMessage = error.message;
+                    });
+            })
+
+            console.log('hello world')
+            console.log(app)
+          </script>
+
+
+
+    </div>  
+    
+    <!-- <div class="create-account-black" id="black-screen"></div> -->
+
+
+
+
+
+
+
+          
+</div>
+    
+</body>
+</html>

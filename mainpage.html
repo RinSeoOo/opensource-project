@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<title style="font-style: italic">LOVEorHATE</title>
+<link href="base.css" type="text/css" rel="stylesheet">
+<!-- <script src="main.js" defer></script> -->
+
+
+<!-- 
+    1. 로그인 페이지 구현
+    2. log comment 저장(삭제는 X버튼, 추가 기능 OK with 날짜-선택)
+    3. 취향 선택 -> main page에 전달(x로 tag 삭제 가능,...-> edit 기능 추가, 공유 링크 생성)
+-->
+
+
+<style>
+    *{ 
+        /* 기본스타일 지정 -> box 지정*/
+        /* box-sizing: border-box; */
+        outline: none;
+    }
+
+
+    a{
+        text-decoration: none;
+        color:rgb(83, 83, 83);
+    }
+
+
+    body {
+        /* 기본 스타일-> font, box 기본 스타일 지정*/
+        /* display: flex; */
+        display: grid;
+        align-items: center;        
+        min-height: 100vh;
+        min-width: 100vh;
+        font-family: 'Epilogue', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        /* line-height: 1.5em; */
+        background-color:rgb(232, 234, 238);
+    }
+
+
+</style>
+
+</head>
+<body>
+    <header>
+        <div class= "LOH_title" id="logo">
+            <h1 class="title-font" style="font-size: 38px;text-shadow: 1px 1px black;"><a href="mainpage.html" title="LOVEorHATE" target='_blank'>I LIKE THESE</h1></a>
+    
+        </div>
+        <nav class="menu-body">
+            <span class="menu_bar"><a href="my_log.html" title="MY LOG:)" id="nav"">MY LOG</a></span> |
+            <span class="menu_bar"><a href="communication.html" title="WITH OTHERS" id="nav">COMMUNICATION</a></span> |
+            <span class="menu_bar"><a href="happythings.html" title="HAPPY:)" id="nav">HAPPY THINGS:)</a></span> |
+            <span class="menu_bar"><a href="login.html" title="LOGIN" id="nav">LOGIN</a></span>
+        </nav>
+    </header>
+    <!-- <hr> -->
+
+    <div class="main-body">
+        <h2>MY ROOM</h2>
+        <!-- <div class="my-name"></div> -->
+
+        <section id="like">
+            <fieldset id="i-like"><legend><h3>I LIKE THESE:)</h3></legend>
+                <form id="like-form"> <!--like=js-form, output-like: js-greeting-->
+                    <input type="text" class="txt_like_class" id="input-like" placeholder="좋아하는 것을 입력해주세요">
+                    <!-- <input type="submit" id="like=submit"> -->
+                </form>
+                <!-- 입력후 출력 txt -->
+                <h3 id="output-like"></h3>
+                <!-- remove button -->
+                
+            </fieldset>
+            <button id="button_like">Remove</button>
+        </section>
+        <script src="./main.js" defer></script>
+
+        <section id="dislike">
+            <fieldset class="i-dont-like"><legend><h3>I DON'T LIKE THESE:(</h3></legend>
+                <div class="dont-like-box">
+    
+                </div>
+            </fieldset>
+        </section>
+    </div>
+
+    <!-- <hr> -->
+
+    <footer class="footer">
+        <h4>
+            <span class="menu_bar" a href="notice.html" style="text-decoration: none; color: black;">NOTICE</span> |
+            <span class="menu_bar">OTHER PROJECTs</span> |
+            <span class="menu_bar"><a href="https://github.com/RinSeoOo/opensource-project.git" title="opensource_project_github_code" target="_blank" style="text-decoration: none; color: black;">visit GITHUB</a></span> 
+        </h4>
+        <div class="title-footer" style="font-size: 20px;">
+            <h2 class="title-font" id="footer-title"><a href="myproject.html" title="LOVEorHATE">
+                I LIKE THESE</h3></a>
+        </div>
+    </footer>
+
+</body>
+</html>

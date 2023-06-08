@@ -1,0 +1,78 @@
+.h2{
+    /* font-family: "Georgia", serif; */    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 5px 0;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 1.5px;
+}
+
+.main-box{
+    box-align: center;
+    /* border: 1px solid blue; */
+    background-color: white;
+    box-shadow: 3px 3px 10px rgb(218, 222, 228);
+    margin-left : auto;
+    margin-right : auto;
+    min-width: 600px;
+    padding: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+b{
+    font-size: 16px;
+    line-height:35px;
+}
+
+
+.field-like{
+    font-size: 14px;
+}
+
+.button{
+    text-align: center;
+    margin: 5px;
+}
+
+input{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 3px;
+    font-size: 14px;
+    min-width: 30px;
+    /* width: 40px; */
+    min-height: 20px;
+}
+
+select{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 3px;
+    font-size: 14px;
+    min-width: 30px;
+}
+
+/* input#weather{
+    margin-top: 30px;
+} */
+
+
+
+#save-button{
+    margin: 10px 3px 5px 3px;
+    /* width: 70px;
+    height: 30px; */
+    padding: 3px;
+}
+
+#later-button{
+    margin: 10px 3px 5px 3px;
+    /* width: 40px;
+    height: 30px; */
+    padding: 3px;
+}
+
+.like-{
+    margin: 10px;
+}

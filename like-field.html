@@ -1,0 +1,174 @@
+<!-- login part-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LOGIN</title>
+<link href="like-field.css" type="text/css" rel="stylesheet">
+<link href="base.css" type="text/css" rel="stylesheet">
+<scirpt src="select.js"></scirpt>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+
+
+</style>
+</head>
+<body>
+    <header>
+        <div class= "LOH_title" id="logo">
+            <h1 class="title-font" style="font-size: 38px;text-shadow: 1px 1px black;"><a href="mainpage.html" title="LOVEorHATE">I LIKE THESE</h1></a>
+    
+        </div>
+        <nav class="menu-body">
+            <span class="menu_bar">SEARCH</span> |
+            <span class="menu_bar"><a href="my_log.html" title="MY LOG:)" style="text-decoration: none; color: black;">MY LOG</a></span> |
+            <span class="menu_bar"><a href="communication.html" title="WITH OTHERS" style="text-decoration: none; color: black;">COMMUNICATION</a></span> |
+            <span class="menu_bar"><a href="happythings.html" title="HAPPY:)" style="text-decoration: none; color: black;">HAPPY THINGS:)</a></span> |
+            <span class="menu_bar"><a href="loginpage.html" title="LOGIN" style="text-decoration: none; color: black;">LOGIN</a></span>
+        </nav>
+    </header>
+    
+    <!-- <hr> -->
+
+    <!--취향 선택-->
+    <div class="main-body">
+        <div class="liked-title" style="margin-bottom: 20px;">
+            <h2 style="font-family: 'Noto Sans KR', sans-serif; font-weight: 700; margin: 6px;">What do you like it?</h2>
+        <small style="font-family: 'Noto Sans KR', sans-serif; font-style: italic; font-weight: normal; font-size: 14px; color: gray;">(It is not necessary. You can move on to the next page.)</small>
+        </div>
+        <div class="field-like" id="like-this">    
+            <div class="like-color">
+                <b>색</b>
+                <input type="color">
+            </div>
+    
+            <div class="like-weather">
+                <b>계절</b>
+                <label><input type="checkbox" id="weather1" value="summer">여름</label>
+                <label><input type="checkbox" id="weather2" value="spring">봄</label>
+                <label><input type="checkbox" id="weather3" value="autumn">가을</label>
+                <label><input type="checkbox" id="weather4" value="winter">겨울</label>        
+            </div>
+    
+            <div class="like-food">
+                <b>음식</b>
+                <input type="text" id="food">
+            </div>
+    
+            <div class="like-drink">
+                <b>음료</b>
+                <input type="text"id="drink">
+            </div>
+    
+            <div class="like-person">
+                <b>인물</b>
+                <input type="text" id="person">
+            </div>
+    
+            <div class="like-animal">
+                <b>동물</b>
+                <input type="text" id="animal">
+            </div>
+    
+            <div class="like-music-type">
+                <b>음악 종류</b>
+                <select id="music-type">
+                    <option value="">종류</option>
+                    <option value="락">락</option>
+                    <option value="댄스">댄스</option>
+                    <option value="발라드">발라드</option>
+                    <option value="포크">포크</option>
+                    <option value="R&B/소울">R&B/소울</option>
+                    <option value="트로트">트로트</option>
+                    <option value="일렉트로니카">일렉트로니카</option>
+                    <option value="etc">기타</option>
+                    </select>
+                </select>
+                <!--etc.js 추가하기-->
+                <input type="text" id="music-etc">
+            </div>
+            
+            <div class="like-music">
+                <b id="tag_name">음악</b>
+                <input type="text" id="music">
+            </div>
+    
+            <div class="like-number">
+                <b id="tag_name">숫자<small>(정수)</small></b>
+                <input type="number" id="number">
+            </div>
+    
+            <div class="like-brand">
+                <b id="tag_name">운동</b>
+                <select id="exercise">
+                    <optgroup label="구기종목">
+                        <option value="">야구</option>
+                        <option value="">축구</option>
+                        <option value="">발야구</option>
+                        <option value="">피구</option>
+                        <option value=""></option>
+                    </optgroup>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </div>
+    
+            <div class="like-movie">
+                <b id="tag_name">영화</b>
+                <input type="text" id="movie">
+            </div>
+    
+            <div class="like-book">
+                <b id="tag_name">책</b>
+                <input type="text" id="book">
+            </div>
+    
+            <div class="like-char">
+                <b id="tag_name">캐릭터</b>
+                <input type="text" id="char">
+            </div>
+    
+            <div class="like-hobby">
+                <b id="tag_name">취미</b>
+                <input type="text" id="hobby">
+            </div>
+    
+        </div>
+        <div class="button">
+            <input type="button" id="save-button" value="저장하기" >
+            <input type="button" id="later-button" value="다음">
+        </div>
+    </div>
+
+
+
+
+    <!-- <hr> -->
+
+    <footer class="footer">
+        <h5>
+            <span class="menu_bar" a href="notice.html" style="text-decoration: none; color: black;">NOTICE</span> |
+            <span class="menu_bar">OTHER PROJECTs</span> |
+            <span class="menu_bar"><a href="https://github.com/RinSeoOo/opensource-project.git" title="opensource_project_github_code" target="_blank" style="text-decoration: none; color: black;">visit GITHUB</a></span> 
+        </h5>
+        <div class="title-footer" style="font-size: 20px;">
+            <h5 class="title-font" style="font-size: 15px;text-shadow: .5px .5px black;"><a href="myproject.html" title="LOVEorHATE">
+                I LIKE THESE</h5></a>
+        </div>
+    </footer>
+    
+
+    
+</body>
+</html>
